@@ -13,7 +13,7 @@ header{
     justify-content: space-between;
 }
 
-.welcom_user{
+.welcome_user{
     padding: 10px;
     font-size: 20px;
 }
@@ -118,4 +118,24 @@ button{
 
 .link{
     color: white;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.login-btn {
+    padding: 8px 16px;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: #0056b3;
 }

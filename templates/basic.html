@@ -4,18 +4,19 @@
 		<!-- Тут важлива інформація для відображення html сторінки -->
 		<title>Rediscover the world</title>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" href="../static/css/style.css">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 	</head>
 	<body>
 		<header>
-        	<nav>
+        	<nav class="top-nav">
             	<ul class="menu" >
                 	<li><a href="/">MAIN</a></li>
-                	<li><a href="/Articles">INTERESTING PLACES</a></li>
+                	<li><a href="/articles">INTERESTING PLACES</a></li>
            		 </ul>
+                <a href="/admin" class="login-btn">Sign in</a>
         	</nav>
-			<div class="welcom_user">
-				{%block welcom%}
+			<div class="welcome_user">
+				{%block welcome%}
                 {%endblock%}
 			</div>
    		 </header>
